@@ -1,0 +1,47 @@
+.promo {
+    background: url(../img/bg_first_page.jpg) center (center / cover) no-repeat;
+    height: 1012px;
+    .header {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__logo {
+            width: 150px;
+            height: 48.66px;
+            img {
+                width: 100%;
+            }
+        }
+        &__nav {
+            margin: 0 auto;
+            height: 110px;
+            min-width: 450px;
+            .menu__item {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                align-items: center;
+                padding: 0;
+                .menu__link {
+                    color: black;
+                    font-weight: Bold;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+            }
+        }
+        &__tel {
+        }
+        &__contacts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 126px;
+            border: solid;
+            border-radius: 5px;
+        }
+
+    }
+}
