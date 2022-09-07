@@ -5,17 +5,19 @@
         padding-top: 50px;
         display: grid;
         grid-template-columns: 2fr 3fr 1fr 1fr;
+        align-items: center;
         padding: 50px 25px;
         &__logo {
             width: 150px;
             height: 48.66px;
+            margin: 0;
             img {
                 width: 100%;
             }
         }
         &__menu {
             margin: 0 auto;
-            height: 110px;
+            padding-left: 30px;
             min-width: 450px;
             .menu__item {
                 display: flex;
@@ -32,16 +34,167 @@
             }
         }
         &__tel {
+            margin: 0 auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            min-width: 265px;
+            text-align: right;
+            a {
+                color: black;
+            }
         }
         &__contacts {
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 0 auto;
             height: 40px;
             width: 126px;
             border: solid;
             border-radius: 5px;
+            text-decoration: none;
+            color: black;
         }
 
     }
+    .title {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 110px;
+        &__text {
+            max-width: 550px;
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+            h1{
+                font-size: 62px;
+                font-weight: 700;
+            }
+        }
+        &__button {
+            display: flex;
+            width: 290px;
+            height: 64px;
+            border: solid;
+            border-radius: 5px;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            h2{
+                margin: 0 auto;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    .carousel {
+        margin-top: 200px;
+        &__item {
+            margin: 0 auto;
+            width: 257px;
+            height: 150px;
+            background-color: black;
+            color: white;
+        }
+    }
 }
+
+.dignity {
+    margin-top: 100px;
+    min-height: 465px;
+    &__shield {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        .dignity__item {
+            margin: 40px 10px;
+            width: 360px;
+            height: 200px;
+            img {
+                width: 55px;
+                height: 55px;
+            }
+            h2 {
+                font-size: 24px;
+                margin-top: 23px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            span {
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
+
+.services {
+    padding-top: 120px;
+    padding-bottom: 150px;
+    background-color: #ffde41;
+    h2 {
+        font-size: 52px;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .services__block {
+            display: flex;
+            margin: 40px 10px;
+            .services__circle {
+                border-radius: 50%;
+                display: block;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 60px;
+                background-color: #fff;
+            }
+            .services__textwrapper {
+                padding-left: 20px;
+                width: 300px;
+                .title {
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding-bottom: 13px;
+                }
+                .descr {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &__button {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .services__click {
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #000000;
+            h2{
+                font-size: 16px;
+                font-weight: bold;
+                margin: 0 auto;
+                padding: 20px 50px;
+            }
+        }
+       
+    }
+
+}
+
+
+
